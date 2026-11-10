@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking - Captain Barbershop</title>
+  <link rel="stylesheet" href="stylish.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Captain Barbershop</h1>
+      <nav aria-label="Navigasi utama">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="booking.html" class="btn-nav">Booking</a>
+        <a href="bookings.html">Booking List</a>
+              <a href="login.html" id="loginNav">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="sub-hero"><div class="overlay"><p class="eyebrow">RESERVASI</p><h2>Pesan Jadwalmu</h2><p>Isi data berikut untuk membuat booking.</p></div></section>
+    <section class="section">
+      <div class="container grid-2 booking-layout">
+        <div class="form-box">
+          <h2>Form Booking</h2>
+          <p class="muted">Booking dilakukan minimal satu hari sebelum tanggal layanan.</p>
+          <form id="form">
+            <label for="name">Nama lengkap</label>
+            <input id="name" name="name" type="text" placeholder="Nama lengkap" autocomplete="name" maxlength="100" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="nama@email.com" autocomplete="email" maxlength="150" required>
+
+            <label for="phone">Nomor HP</label>
+            <input id="phone" name="phone" type="tel" placeholder="08xxxxxxxxxx" autocomplete="tel" inputmode="tel" maxlength="20" pattern="[0-9+() -]{8,20}" required>
+
+            <label for="date">Tanggal reservasi</label>
+            <input id="date" name="date" type="date" required>
+
+            <label for="time">Jam reservasi</label>
+            <select id="time" name="time" required>
+              <option value="">Pilih jam</option>
+              <option value="09:00">09:00</option><option value="10:00">10:00</option>
+              <option value="11:00">11:00</option><option value="12:00">12:00</option>
+              <option value="13:00">13:00</option><option value="14:00">14:00</option>
+              <option value="15:00">15:00</option><option value="16:00">16:00</option>
+              <option value="17:00">17:00</option><option value="18:00">18:00</option>
+              <option value="19:00">19:00</option><option value="20:00">20:00</option>
+            </select>
+
+            <label for="service">Layanan</label>
+            <select id="service" name="service" required>
+              <option value="">Pilih layanan</option>
+              <option value="Haircut">Haircut</option>
+              <option value="Beard Styling">Beard Styling</option>
+              <option value="Hair Spa">Hair Spa</option>
+            </select>
+
+            <label for="barber">Barber</label>
+            <select id="barber" name="barber" required>
+              <option value="">Pilih barber</option>
+              <option value="John">John</option>
+              <option value="Michael">Michael</option>
+              <option value="David">David</option>
+            </select>
+
+            <label for="note">Catatan tambahan (opsional)</label>
+            <textarea id="note" name="note" placeholder="Contoh: model rambut yang diinginkan" maxlength="500"></textarea>
+
+            <div class="form-actions">
+              <button type="submit">Booking Sekarang</button>
+              <button type="reset" class="btn-secondary">Reset Form</button>
+            </div>
+            <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="info-box">
+          <p class="eyebrow">INFORMASI</p>
+          <h2>Sebelum melakukan booking</h2>
+          <p><strong>Jam operasional:</strong> 09:00–21:00</p>
+          <p><strong>Alamat:</strong> Jl. Medan No. 1</p>
+          <p><strong>Telepon:</strong> 0812-3456-7890</p>
+          <div class="highlight"><p>Booking minimal 1 hari sebelumnya.</p></div>
+          <p class="muted small">Data pada versi ini disimpan di browser yang digunakan, belum tersinkron dengan perangkat lain.</p>
+          <a href="bookings.html" class="btn">Lihat Semua Booking</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><p class="copyright">© 2026 Captain Barbershop</p></footer>
+</body>
+</html>

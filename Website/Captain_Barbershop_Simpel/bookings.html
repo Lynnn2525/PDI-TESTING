@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking List - Captain Barbershop</title>
+  <link rel="stylesheet" href="stylish.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Captain Barbershop</h1>
+      <nav aria-label="Navigasi utama">
+        <a href="index.html">Home</a><a href="booking.html">Booking</a><a href="bookings.html" class="btn-nav">Booking List</a>
+              <a href="login.html" id="loginNav">Login</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="sub-hero"><div class="overlay"><p class="eyebrow">DATA RESERVASI</p><h2>Booking List</h2><p>Kelola data booking yang tersimpan pada browser ini.</p></div></section>
+    <section class="section">
+      <div class="container">
+        <div class="list-heading">
+          <div><h2>Data Booking</h2><p class="muted">Admin dapat mengelola semua booking. Pelanggan hanya melihat booking miliknya.</p></div>
+          <a class="btn" href="booking.html">+ Booking Baru</a>
+        </div>
+        <label class="sr-only" for="search">Cari booking</label>
+        <input type="search" id="search" class="search-input" placeholder="Cari nama, email, atau barber...">
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th>Nama</th><th>Email</th><th>No. HP</th><th>Tanggal</th><th>Jam</th><th>Layanan</th><th>Barber</th><th>Status</th><th>Catatan</th><th>Aksi</th></tr></thead>
+            <tbody id="table"></tbody>
+          </table>
+        </div>
+        <p id="emptyState" class="empty-state">Belum ada booking tersimpan.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><p class="copyright">© 2026 Captain Barbershop</p></footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captain Barbershop</title>
+  <link rel="stylesheet" href="stylish.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Captain Barbershop</h1>
+      <nav aria-label="Navigasi utama">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="booking.html">Booking</a>
+        <a href="bookings.html" class="btn-nav">Booking List</a>
+              <a href="login.html" id="loginNav">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="overlay">
+        <p class="eyebrow">CAPTAIN BARBERSHOP</p>
+        <h2>Premium Grooming Experience</h2>
+        <p>Rasakan layanan barbershop terbaik dengan kualitas premium.</p>
+        <a href="booking.html" class="btn">Reservasi Sekarang</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container grid-2 about-grid">
+        <div>
+          <p class="eyebrow">TENTANG KAMI</p>
+          <h2>Rawat penampilan, tingkatkan percaya diri.</h2>
+          <p>Captain Barbershop menyediakan layanan potong rambut, beard styling, dan hair spa dengan barber profesional serta suasana yang nyaman.</p>
+        </div>
+        <div class="feature-panel">
+          <h3>Praktis dan mudah</h3>
+          <p>Pilih layanan dan jadwal melalui formulir reservasi, lalu lihat data booking pada halaman Booking List.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section dark">
+      <div class="container">
+        <p class="eyebrow centered">LAYANAN KAMI</p>
+        <h2 class="title">Pilih perawatan yang kamu butuhkan</h2>
+        <div class="grid-3">
+          <article class="card"><span class="service-icon">✂</span><h3>Haircut</h3><p>Potongan rambut modern sesuai gaya pilihanmu.</p></article>
+          <article class="card"><span class="service-icon">⌁</span><h3>Beard Styling</h3><p>Perawatan dan penataan jenggot dengan rapi.</p></article>
+          <article class="card"><span class="service-icon">✦</span><h3>Hair Spa</h3><p>Perawatan rambut untuk pengalaman yang lebih rileks.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="barber" class="section">
+      <div class="container">
+        <p class="eyebrow centered">TIM KAMI</p>
+        <h2 class="title">Barber Profesional</h2>
+        <div class="grid-3">
+          <article class="card barber-card"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Barber John"><h3>John</h3><p>Fade Specialist</p></article>
+          <article class="card barber-card"><img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Barber Michael"><h3>Michael</h3><p>Hair Stylist</p></article>
+          <article class="card barber-card"><img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Barber David"><h3>David</h3><p>Beard Expert</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="container">
+        <p class="eyebrow centered">KATA PELANGGAN</p>
+        <h2 class="title">Pengalaman yang berkesan</h2>
+        <div class="grid-3">
+          <article class="card"><p class="stars">★★★★★</p><p>“Pelayanan terbaik, sangat puas.”</p></article>
+          <article class="card"><p class="stars">★★★★★</p><p>“Tempat nyaman dan barber profesional.”</p></article>
+          <article class="card"><p class="stars">★★★★★</p><p>“Sangat direkomendasikan.”</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="booking-stat card">
+          <p class="eyebrow">RINGKASAN RESERVASI</p>
+          <h2>Total Booking Tersimpan</h2>
+          <p id="bookingCount" class="count">0</p>
+          <p class="muted">Jumlah data pada browser ini.</p>
+          <a class="btn" href="bookings.html">Lihat Booking List</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Siap tampil lebih percaya diri?</h2>
+      <p>Atur jadwal reservasi kamu sekarang.</p>
+      <a href="booking.html" class="btn btn-dark">Booking Sekarang</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid-3">
+      <div><h3>Captain Barbershop</h3><p>Barbershop modern dengan pelayanan terbaik.</p></div>
+      <div><h3>Menu</h3><p><a href="#home">Home</a></p><p><a href="#about">About</a></p><p><a href="#services">Services</a></p><p><a href="booking.html">Booking</a></p></div>
+      <div><h3>Kontak</h3><p>Jl. Medan No. 1</p><p>0812-3456-7890</p><p>captainbarbershop@email.com</p></div>
+    </div>
+    <p class="copyright">© 2026 Captain Barbershop. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

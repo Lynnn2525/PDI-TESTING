@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Captain Barbershop</title><link rel="stylesheet" href="stylish.css"><script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar"><div class="container nav-container"><h1 class="logo">Captain Barbershop</h1><nav><a href="index.html">Home</a><a href="booking.html">Booking</a><a href="bookings.html">Booking List</a></nav></div></header>
+  <main class="section"><div class="container grid-2 auth-layout">
+    <section class="form-box"><p class="eyebrow">SELAMAT DATANG</p><h2>Login</h2><p class="muted">Masuk untuk membuat atau mengelola reservasi.</p>
+      <form id="loginForm"><label for="loginEmail">Email</label><input id="loginEmail" type="email" required placeholder="nama@email.com"><label for="loginPassword">Password</label><input id="loginPassword" type="password" required placeholder="Password"><button type="submit">Login</button><p id="loginMessage" class="form-message" role="status"></p></form>
+      <div class="highlight"><strong>Akun demo admin</strong><p>Email: admin@captainbarbershop.local<br>Password: Admin123!</p></div>
+    </section>
+    <section class="form-box"><p class="eyebrow">AKUN PELANGGAN</p><h2>Daftar Akun</h2><p class="muted">Buat akun pelanggan untuk melakukan reservasi.</p>
+      <form id="registerForm"><label for="registerName">Nama lengkap</label><input id="registerName" required maxlength="100" placeholder="Nama lengkap"><label for="registerEmail">Email</label><input id="registerEmail" type="email" required maxlength="150" placeholder="nama@email.com"><label for="registerPassword">Password</label><input id="registerPassword" type="password" minlength="6" required placeholder="Minimal 6 karakter"><button type="submit">Daftar</button><p id="registerMessage" class="form-message" role="status"></p></form>
+    </section>
+  </div></main><footer class="footer"><p class="copyright">© 2026 Captain Barbershop</p></footer>
+</body></html>
